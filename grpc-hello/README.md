@@ -33,3 +33,24 @@ go run server.go
 cd client
 go run client.go
 ```
+
+## make a docker image and run
++ write a [docker file](./Dockerfile) used for building a docker image
+
++ build a docker image
+```shell
+docker build -t chinlying/grpc-hello:V1.0 .
+```
+
++ put the generated image into a container and run 
+```shell
+docker run -p 8001:8001 --name grpc-hello chinlying/grpc-hello:V1.0
+```
+
++ testing
+```shell
+cd client
+go build && ./client
+```
+
++ please refer to [common docker commands](../docker/commands.md) for docker operations
