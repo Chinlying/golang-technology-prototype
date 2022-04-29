@@ -35,10 +35,10 @@ go run client.go
 ```
 
 ## make a docker image and run
-+ write a [docker file](./Dockerfile) used for building a docker image
++ write a [docker file](Dockerfile) used for building a docker image
 
 + build a docker image
-  + the size is only 84.5MB ![image size](../images/size of the built image.png)
+  + the size is only 84.5MB ![image size](../../images/size%20of%20the%20built%20image.png)
 ```shell
 docker build -t chinlying/grpc-hello:V1.0 .
 ```
@@ -54,4 +54,4 @@ cd client
 go build && ./client
 ```
 
-+ please refer to [common docker commands](../docker/commands.md) for more docker operations
++ please refer to [common docker commands](../../docker/commands.md) for more docker operations

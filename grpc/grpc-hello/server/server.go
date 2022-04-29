@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	"golang-technology-prototype/grpc-hello/proto"
+	proto "golang-technology-prototype/grpc/grpc-hello/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 	"net"
