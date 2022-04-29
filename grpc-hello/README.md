@@ -38,6 +38,7 @@ go run client.go
 + write a [docker file](./Dockerfile) used for building a docker image
 
 + build a docker image
+  + the size is only 84.5MB ![image size](../images/size of the built image.png)
 ```shell
 docker build -t chinlying/grpc-hello:V1.0 .
 ```
