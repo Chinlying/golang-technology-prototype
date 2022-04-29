@@ -6,4 +6,5 @@
 
 ### make a docker image for grpc-hello
 
-+ refer to the [Dockerfile for the project `grpc-hello`](../grpc-hello/Dockerfile)
++ write [dockerfile](../grpc-hello/Dockerfile) for the demo grpc project [`grpc-hello`](../grpc-hello)
++ refer to [README.md](../grpc-hello/README.md) of `grpc-hello` for detail process

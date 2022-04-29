@@ -22,7 +22,7 @@ cd client
 go build && ./client
 ```
 
-### OPtion 2
+### Option 2
 + open a terminal, starting server
 ```shell
 cd server
@@ -53,4 +53,4 @@ cd client
 go build && ./client
 ```
 
-+ please refer to [common docker commands](../docker/commands.md) for docker operations
++ please refer to [common docker commands](../docker/commands.md) for more docker operations
