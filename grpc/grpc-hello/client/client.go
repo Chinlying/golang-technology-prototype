@@ -4,9 +4,9 @@ import (
 	"bufio"
 	"context"
 	"fmt"
-	proto "golang-technology-prototype/grpc/grpc-hello/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
+	proto "grpc-hello/proto"
 	"os"
 )
 

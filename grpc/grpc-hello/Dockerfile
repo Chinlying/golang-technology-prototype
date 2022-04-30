@@ -1,5 +1,6 @@
-# select ubuntu 20.04 as the basic running environment
-FROM ubuntu:20.04
+# select alpine as the basic running environment
+# It's better to refer to 'Dockerfile-Recommand' for learning how to write a better dockerfile
+FROM alpine
 
 # assign working directory
 WORKDIR /go/app

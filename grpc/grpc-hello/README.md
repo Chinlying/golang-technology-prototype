@@ -35,13 +35,20 @@ go run client.go
 ```
 
 ## make a docker image and run
-+ write a [docker file](Dockerfile) used for building a docker image
 
 + build a docker image
-  + the size is only 84.5MB ![image size](../../images/size%20of%20the%20built%20image.png)
-```shell
-docker build -t chinlying/grpc-hello:V1.0 .
-```
+  + First Method: using a docker image to load the compiled executable binary file, please refer [simple dockerfile](Dockerfile)
+    ```shell
+    docker build -t chinlying/grpc-hello:V1.0 .
+    ```
+    + Shortage: It needs to be compiled locally, which is not suitable for cross platform
+    + `Notes`: It's better not use `golang:1.1*` as the basic image, otherwise the compiled image will be huge (larger than 300MB) 
+  + `Recommended Method`: using a docker image to compile out the executable binary and then load it, please refer [recommended dockerfile](Dockerfile-Recommend)
+    ```shell
+    sudo docker build -f Dockerfile-Recommend -t chinlying/grpc-hello:V1.0 .
+    ```
+    + Advantage: Compilation does not depend on the local environment, it's suitable for cross platform
+  + the compiled image size is only 17.6MB ![image size](../../images/size%20of%20the%20built%20image.png)
 
 + put the generated image into a container and run 
 ```shell

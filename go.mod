@@ -1,4 +1,4 @@
-module golang-technology-prototype
+module growing-into-an-excellent-golang-developer
 
 go 1.17
 

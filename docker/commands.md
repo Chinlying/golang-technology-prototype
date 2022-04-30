@@ -39,3 +39,8 @@ docker stop grpc-hello
 ```shell
 docker rm grpc-hello
 ```
+
++ browsing files in a docker image(here browsing the fold `build`)
+```shell
+docker run -it --rm chinlying/grpc-hello:V2.0 ls -l /build
+```
