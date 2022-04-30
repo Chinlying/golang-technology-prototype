@@ -1,0 +1,20 @@
+FROM golang:alpine AS builder
+
+ENV GO111MODULE=on \
+    CGO_ENABLED=0 \
+    GOOS=linux \
+    GOARCH=amd64 \
+    GOPROXY=https://goproxy.cn,direct
+
+WORKDIR /grpc-hello
+COPY . .
+RUN go build -o /app/server ./server/server.go
+
+
+FROM alpine
+WORKDIR /go/app
+COPY --from=builder /app/server .
+# expose port
+EXPOSE 8001
+
+CMD ["./server"]
