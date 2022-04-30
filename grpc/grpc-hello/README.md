@@ -48,7 +48,8 @@ go run client.go
     sudo docker build -f Dockerfile-Recommend -t chinlying/grpc-hello:V1.0 .
     ```
     + Advantage: Compilation does not depend on the local environment, it's suitable for cross platform
-  + the compiled image size is only 17.6MB ![image size](../../images/size%20of%20the%20built%20image.png)
+  + the compiled image size is only 17.6MB 
+  ![image size](../../images/size%20of%20the%20built%20image.png)
 
 + put the generated image into a container and run 
 ```shell
