@@ -1,4 +1,9 @@
 ## Array
+
+### length of array
+```go
+n := len(nums)
+```
 ### Initialization
 ```go
 1, nums := [3]int{1,2,3}
@@ -48,3 +53,5 @@ if value, ok := hashTable[key]; ok {
     return key, value
 }
 ```
+
+## Strings
