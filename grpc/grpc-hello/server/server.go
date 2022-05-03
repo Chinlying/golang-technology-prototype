@@ -19,7 +19,7 @@ func (s *server) SayHello(ctx context.Context, req *proto.SayRequest) (*proto.Sa
 }
 
 func main() {
-	listen, err := net.Listen("tcp", ":8001")
+	listen, err := net.Listen("tcp", ":50051")
 	if err != nil {
 		fmt.Println("failed to listen: %v", err)
 		return
@@ -34,7 +34,7 @@ func main() {
 		listen.Close()
 	}()
 
-	fmt.Println("Serving 8001...")
+	fmt.Println("Serving 50051...")
 	err = s.Serve(listen)
 	if err != nil {
 		fmt.Println("failed to serve: %v", err)

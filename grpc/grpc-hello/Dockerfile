@@ -9,7 +9,7 @@ WORKDIR /go/app
 COPY ./server/server .
 
 # expose port
-EXPOSE 8001
+EXPOSE 50051
 
 # execute command
 CMD ["./server"]

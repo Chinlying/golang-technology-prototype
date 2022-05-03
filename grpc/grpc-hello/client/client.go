@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	var serviceHost = "127.0.0.1:8001"
+	var serviceHost = "127.0.0.1:50051"
 
 	conn, err := grpc.Dial(serviceHost, grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {

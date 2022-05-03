@@ -15,6 +15,6 @@ FROM alpine
 WORKDIR /go/app
 COPY --from=builder /app/server .
 # expose port
-EXPOSE 8001
+EXPOSE 50051
 
 CMD ["./server"]
