@@ -42,7 +42,7 @@ func NewUser(id int, options ...UserOption) *User {
 		db:   nil,
 	}
 	for _, option := range options {
-		option(user)
+		option(user) // option的返回类型是func(user *User),是个函数
 	}
 	return user
 }
@@ -50,6 +50,6 @@ func NewUser(id int, options ...UserOption) *User {
 func main() {
 	// 参数分为两部分，一部分必填，一部分选填
 	user := NewUser(1, WithAge(15), WithName("Alice"))
-	WithDB("DB instance")(user)
+	WithDB("DB instance")(user) // 单独调用
 	fmt.Println(*user)
 }
