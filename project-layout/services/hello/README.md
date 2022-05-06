@@ -1,5 +1,5 @@
 ## Compile proto:
-Under the root of this project `grpc-hello`
+Under the root of this project `hello`
 ```shell
 protoc --go_out=. --go-grpc_out=. proto/hello.proto
 ```
