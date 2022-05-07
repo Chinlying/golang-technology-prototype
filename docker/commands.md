@@ -35,9 +35,30 @@ docker start grpc-hello
 docker stop grpc-hello
 ```
 
++ stop all containers
+```shell
+docker stop $(docker ps -a -q)
+```
+
 + [Remove one or more containers](https://docs.docker.com/engine/reference/commandline/rm/)
 ```shell
 docker rm grpc-hello
+```
+
++ Remove all containers
+```shell
+docker rm $(docker ps -a -q)
+```
+
++ [Remove one or more images](https://docs.docker.com/engine/reference/commandline/rmi/)
+```shell
+docker rmi fd484f19954f
+docker rmi test2:latest
+```
+
++ Remove all images with none tag or none repository
+```shell
+docker rmi $(docker images -f "dangling=true" -q)
 ```
 
 + browsing files in a docker image(here browsing the fold `build`)
