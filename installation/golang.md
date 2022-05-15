@@ -1,7 +1,8 @@
 ## [Download and install](https://go.dev/doc/install)
 
+### Ubuntu
 + install
-```go
+```shell
 rm -rf /usr/local/go && tar -C /usr/local -xzf go1.18.2.linux-amd64.tar.gz
 ```
 
