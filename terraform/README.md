@@ -1,1 +1,1 @@
-+ Create a PostgreSQl instance on Aliyun [aliyun-pgsql](./aliyun-pgsql)
++ Create a PostgreSQL instance on Aliyun [aliyun-pgsql](./aliyun-pgsql)
