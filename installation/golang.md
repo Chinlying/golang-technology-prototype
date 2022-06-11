@@ -18,3 +18,13 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 ```shell
 go version
 ```
+
+### Macos
++ configure environment variables, modify `~/.zshrc` and add:
+```shell
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export GO111MODULE=on
+```
++ then `source ~/.zshrc`
