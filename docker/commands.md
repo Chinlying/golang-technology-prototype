@@ -65,3 +65,8 @@ docker rmi $(docker images -f "dangling=true" -q)
 ```shell
 docker run -it --rm chinlying/grpc-hello:V2.0 ls -l /build
 ```
+
++ save a docker image
+```shell
+docker save -o telemetry.tar eu.gcr.io/core-shared-306714/service/telemetry:v1-fe930415d
+```
